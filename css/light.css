@@ -1,0 +1,17 @@
+#light,
+#light-outer {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px 100px 0px 0px ;
+}
+#light-outer {
+
+  display: inline-block;
+  background: radial-gradient(ellipse at 50px 300px, rgba(255,255,255,1) 27%,rgba(255,255,255,.3) 67%);
+  margin-right:20px;
+}
+
+h1{ margin-top:20px; font-size: 18px;}
+h3 {
+  font-size: 16px;
+}

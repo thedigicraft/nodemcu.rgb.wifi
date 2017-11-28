@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <title>NodeMCU Demo</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+
+    <!-- Light CSS -->
+    <link rel="stylesheet" href="css/light.css">
+
+    <!-- Used for the color picker -->
+    <link rel='stylesheet' href='css/spectrum.css' />
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-4">
+
+          <div class="float-left" id="light"></div>
+
+          <h1 style="padding-left:10px;">
+            NodeMCU Demo
+            <small>Wifi RGB Candles</small>
+          </h1>
+
+          <hr />
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col">
+
+          <div class="row">
+
+            <div class="col-sm-3">
+
+              <h3>Color: </h3>
+              <input type='text' id="color-picker" />
+
+              <hr />
+
+              <div class="range" data-name="range">
+                <h3>
+                  Flicker Color Range:
+                  <span class="range-value"></span>
+                </h3>
+                <input id="flicker-range" type="range" min="0" max="200" step="4" style="width:100%">
+              </div><!-- END range -->
+
+              <hr />
+
+              <div class="range" data-name="delay">
+                <h3>
+                  Flicker Delay Range:
+                  <span class="range-value"></span>
+                </h3>
+                <input id="flicker-delay" type="range" min="0" max="100" step="4" style="width:100%">
+              </div><!-- END range -->
+
+            </div><!-- END col -->
+
+          </div><!-- END row -->
+
+        </div><!-- END colr -->
+
+      </div><!-- END row -->
+
+    </div><!-- END container -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+  <script src="https://www.w3schools.com/lib/w3color.js"></script>
+  <!-- Used for the color picker -->
+  <script src='js/spectrum.js'></script>
+  <script src='js/light.js'></script>
+
+  </body>
+</html>
